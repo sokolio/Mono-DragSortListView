@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    tools:context=".DragSortListView">
+
+  <dragsortlist.DragSortListView
+        xmlns:myns="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/simpleDragListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:dividerHeight="1dp"
+        android:divider="#55ffffff"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:choiceMode="singleChoice"
+        myns:collapsed_height="2dp"
+        myns:drag_enabled="true"
+        myns:drag_handle_id="@id/drag_handle"
+        myns:drag_scroll_start="0.33"
+        myns:drag_start_mode="onDown"
+        myns:float_alpha="0.6"
+        myns:max_drag_scroll_speed="0.5"
+        myns:remove_enabled="true"
+        myns:slide_shuffle_speed="0.3"
+        myns:sort_enabled="true"
+        myns:use_default_controller="true"
+        />
+
+</LinearLayout>
